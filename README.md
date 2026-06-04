@@ -1,12 +1,11 @@
-# create-blaze
+# create-blazefw-app
 
 Scaffold a new Blaze project for Cloudflare Workers.
 
 ## Usage
 
 ```bash
-npm create blaze@latest
+npm create blazefw-app@latest
 # or
-npx create-blaze
+npx create-blazefw-app@latest
 ```
-# blaze-scaffold

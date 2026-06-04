@@ -1,5 +1,5 @@
 {
-  "name": "create-blaze",
+  "name": "create-blazefw-app",
   "version": "1.0.0",
   "description": "Scaffold a new Blaze project for Cloudflare Workers",
   "type": "module",
