@@ -1,0 +1,15 @@
+name            = "<PROJECT_NAME>"
+main            = "src/index.ts"
+compatibility_date = "<TODAY>"
+
+[[d1_databases]]
+binding      = "DB"
+database_name = "<PROJECT_NAME>-db"
+database_id  = "placeholder-replace-after-wrangler-d1-create"
+
+[[kv_namespaces]]
+binding = "KV"
+id      = "placeholder-replace-after-wrangler-kv-create"
+
+[vars]
+API_TOKEN = "dev-token-replace-in-production"

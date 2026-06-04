@@ -1,0 +1,8 @@
+name            = "<PROJECT_NAME>"
+main            = "src/index.ts"
+compatibility_date = "<TODAY>"
+assets          = { directory = "./public" }
+
+[[kv_namespaces]]
+binding = "KV"
+id      = "placeholder-replace-after-wrangler-kv-create"

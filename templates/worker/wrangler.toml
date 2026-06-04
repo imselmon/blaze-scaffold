@@ -1,0 +1,8 @@
+name            = "<PROJECT_NAME>"
+main            = "src/index.ts"
+compatibility_date = "<TODAY>"
+
+# Uncomment to add bindings:
+# [[kv_namespaces]]
+# binding = "KV"
+# id      = "your-kv-id"

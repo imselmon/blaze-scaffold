@@ -1,0 +1,35 @@
+{
+  "name": "create-blaze",
+  "version": "1.0.0",
+  "description": "Scaffold a new Blaze project for Cloudflare Workers",
+  "type": "module",
+  "main": "./dist/index.js",
+  "author": "imselmon",
+  "bin": {
+    "create-blaze": "./dist/index.js"
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "postbuild": "node -e \"const f='dist/index.js',d=require('fs');const c=d.readFileSync(f,'utf8');if(!c.startsWith('#!/'))d.writeFileSync(f,'#!/usr/bin/env node\\n'+c)\"",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.9.0",
+    "picocolors": "^1.1.1",
+    "fs-extra": "^11.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/node": "^20.0.0",
+    "@types/fs-extra": "^11.0.0"
+  },
+  "engines": { "node": ">=18.0.0" },
+  "keywords": ["cloudflare", "workers", "create", "scaffold", "blaze", "cli"],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

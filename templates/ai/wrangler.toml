@@ -1,0 +1,6 @@
+name            = "<PROJECT_NAME>"
+main            = "src/index.ts"
+compatibility_date = "<TODAY>"
+
+[ai]
+binding = "AI"
